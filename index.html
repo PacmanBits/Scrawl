@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<script src="scrawl2.js"></script>
+		<style>
+			body
+			{
+				background-color:             #333;
+			}
+			
+			#Start
+			{
+				background-color:             orange;
+				position:                     relative;
+				width:                        500px;
+				height:                       500px;
+				overflow:                     auto;
+				margin:                       100px;
+			}
+			
+			.hScrawlBar,
+			.vScrawlBar
+			{
+				background-color:             #CCC;
+				opacity:                      0.5;
+				position:                     absolute;
+			}
+			
+			.hScrawlBar
+			{
+				height:                       10px;
+				left:                         30px;
+				right:                        30px;
+				bottom:                       10px;
+			}
+			
+			.vScrawlBar
+			{
+				width:                        10px;
+				top:                          30px;
+				right:                        10px;
+				bottom:                       30px;
+			}
+			
+			.hScrawlBar:hover,
+			.vScrawlBar:hover
+			{
+				opacity:                      0.75;
+			}
+			
+			.hScrawlThumb,
+			.vScrawlThumb
+			{
+				background-color:             #333;
+				left:                         0;
+				top:                          0;
+				position:                     absolute;
+				border-radius:                2.5px;
+			}
+			
+			.hScrawlThumb
+			{
+				height:                       10px;
+			}
+			
+			.vScrawlThumb
+			{
+				width:                        10px;
+			}
+			
+		</style>
+		
+		<script>
+			var start, inner, outer, sizer1, sizer2, sizers;
+			$(function()
+			{
+				$("#Start").scrawl();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="Start">
+			<img src="Koala.jpg" />
+		</div>
+	</body>
+</html>
