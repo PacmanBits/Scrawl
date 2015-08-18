@@ -22,8 +22,9 @@
 			.vScrawlBar
 			{
 				background-color:             #CCC;
-				opacity:                      0.5;
+				opacity:                      0.25;
 				position:                     absolute;
+				transition:                   opacity 0.5s;
 			}
 			
 			.hScrawlBar
@@ -43,7 +44,9 @@
 			}
 			
 			.hScrawlBar:hover,
-			.vScrawlBar:hover
+			.vScrawlBar:hover,
+			.hScrawlBar:active,
+			.vScrawlBar:active
 			{
 				opacity:                      0.75;
 			}
@@ -56,6 +59,7 @@
 				top:                          0;
 				position:                     absolute;
 				border-radius:                2.5px;
+				cursor:                       pointer;
 			}
 			
 			.hScrawlThumb
